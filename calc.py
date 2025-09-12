@@ -1,0 +1,9 @@
+num1 = input("Enter num 1: ")
+num2 = input("enter num 2: ")
+num1 = int(num1) 
+num2 = int(num2) 
+sum = num1 + num2 
+num3 = input("Enter num 3: ") 
+num4 = input("Enter num 4: ")
+num3 = int(num3)
+num4 = int(num4)
