@@ -1,10 +1,11 @@
-option = input("Enter number 1")
-option = int(option)
-option2 = input("Enter number 2")
-option2 = int(option2)
-if option > option2:
-    print ("number 1 wins")
-if option < option2:
-    print ("number 2 wins")
-if option == option2:
-    print ("numbers are equal")
+x = input ("what is the number")
+x = int(x)
+check = False 
+while check == False:
+    print(x)
+    if x == 1:
+        check = True
+    if x % 2 == 1:
+            x = 3*x + 1
+    if x % 2 == 0:
+            x = x/2 
