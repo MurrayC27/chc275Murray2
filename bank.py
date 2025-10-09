@@ -1,9 +1,8 @@
-#this is a bank sytem that can depoit/withdraw money, transfer money, add/remove accounts, and view accounts and their balances
-accounts = ["connor","John", "Mike", "jack"] #this is the list of all the accounts
-balances = [200, 500, 1000, 700] #this is a list of the balances for the accounts
+accounts = ["connor","john", "Mike", "jack"] #list of all the accounts
+balances = [200, 500, 1000, 700] #list of the balances for the accounts
 check = False 
-while check == False:#this ensures the program will continue running until "check = True"
-    x = input("would you like to open the menu? ") #the program will continue to ask "would you like to open the menu" until it is told something other than "yes"
+while check == False:#this makes program continue running until "check = True"
+    x = input("would you like to open the menu? ") #program will continue to ask "would you like to open the menu" until it is told something other than "yes"
     if x == ("yes"):
         print("1.deposit")
         print("2.withdraw")
@@ -19,21 +18,21 @@ while check == False:#this ensures the program will continue running until "chec
             index = accounts.index(accountname4)
             print(balances[index]) 
         elif x == ("5"):
-            #takes in name of new account, creates the account, creates a balance for the account, and links the two together
+            #takes in name of new account, creates the account
             accountname = input("what is your account name? ") 
             accounts.append(accountname) 
             balances.append(0) 
             index = accounts.index(accountname) 
             print("your account has been added")
         elif x == ("6"):
-            #takes in the account name, links it to corresponding balance, and removes both the account and its balance
+            #takes in the account name, links it to balance
             accountname2 = input("what is your account name? ") 
             index = accounts.index(accountname2) 
             accounts.pop(index) 
             balances.pop(index) 
             print("your account and balance has been removed. ")
         elif x == ("1"):
-            #takes in the account name, links it to corresponding balance, and adds the value being deposited to the balance
+            #takes in the account name links it to balance
             accountname3 = input("what is your account name? ") 
             index = accounts.index(accountname3) 
             x = input("how much would you like to add? ") 
@@ -41,7 +40,7 @@ while check == False:#this ensures the program will continue running until "chec
             balances[index] = balances[index] + x 
             print(f"your new balance is {balances[index]} ")
         elif x ==("2"):
-             #takes in the account name, links it to corresponding balance, and subtracts the value being withdrawn from the balance
+             #takes in the account name,and subtracts the value being withdrawn from the balance
             accountname5 = input("what is your account name? ") 
             index = accounts.index(accountname5) 
             x = input("how much would you like to withdraw? ") 
@@ -49,7 +48,7 @@ while check == False:#this ensures the program will continue running until "chec
             balances[index] = balances[index] - x #
             print(f"your new balance is {balances[index]} ") 
         elif x == ("4"):
-            #takes in both accounts, subtracts value of money from the transferring account's balance and adds it to the recieving accounts balance
+            #subtracts value of money from the transferring account's balance and adds it to the recieving accounts balance
             accountname6 = input("what is your account name? ") 
             index = accounts.index(accountname6)
             accountname7 = input("what is the transfer account name? ") 
