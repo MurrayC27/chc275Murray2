@@ -1,3 +1,4 @@
+#This is a bank code where you can do everything from deposit,withdraw, veiw acounts, transfer money, add acounts, and remove acounts 
 accounts = ["connor","john", "Mike", "jack"] #list of all the accounts
 balances = [200, 500, 1000, 700] #list of the balances for the accounts
 check = False 
