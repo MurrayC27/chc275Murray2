@@ -69,7 +69,7 @@ def display_score():
   
 
 
-# Main game function
+# Main game 
 def play_rps():
     print("Play Rock Paper Scissors")
    
@@ -89,7 +89,7 @@ def play_rps():
     # Display choices
     display_choices(player_choice, computer_choice)
 
-    # Determine winner
+    
     result = determine_winner(player_choice, computer_choice)
 
     # Update score
@@ -99,7 +99,7 @@ def play_rps():
     display_score()
 
 
-# Run the game
+# Runs the game
 while True:
     play_rps()
 
@@ -108,5 +108,4 @@ while True:
     if replay != 'yes':
         print("Final Score")
         display_score()
-        print("Thanks for playing!")
-        break
+        print("thank u for playing")
